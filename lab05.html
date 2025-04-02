@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Basic Content Elements with CSS Layout</title>
+    <link href="styles/lab04.css" rel="stylesheet">
+    <link href="styles/layout.css" rel="stylesheet">
+    <link href="styles/dl.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HTML 5 Basic Content Elements with CSS Layout</h1>
+    </header>
+
+    <aside>
+        <p>HTML page without CSS styling looks a bit boring!</p>
+        <p>We will give this article a border, margin, padding and background graphic with CSS.</p>
+        <p>We will also float it to the right and see what will fit.</p>
+    </aside>
+
+    <article>
+        <section id="headings">
+            <h2>Headings and Paragraphs</h2>
+            <p>Headings and paragraphs are BLOCK elements.</p>
+            <h3>Headings</h3>
+            <p>There are 6 levels of heading. Headings are logical markup. Do not make levels. If you want to emphasize words or phrases, don't change the font - change the tag.</p>
+            <h3>Paragraphs</h3>
+            <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+        </section>
+
+        <section id="specialchars">
+            <h2>Special Characters</h2>
+            <p>While HTML supports many named special characters like &lt; (&lt;), XML only supports 5 normally: &lt; &gt; &amp; &apos; and &quot;. So to keep you HTML compliant you need to use numbers for all the others.</p>
+        </section>
+
+        <section id="lists">
+            <h2>Lists</h2>
+            <p>There are three types of lists: Unordered and Ordered lists, and Definition lists.</p>
+
+            <div>
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>First bullet point</li>
+                    <li>Second bullet point</li>
+                    <li>Third bullet point</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Ordered List</h3>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3>Definition List</h3>
+                <dl>
+                    <dt>First term (or name)</dt>
+                    <dd>Basic description (or definition, or value)</dd>
+                    <dt>Second term (or name)</dt>
+                    <dd>Longer description (or definition, or value)</dd>
+                </dl>
+                <p>Lists can also be nested inside each other.</p>
+                <ol>
+                    <li>First item
+                        <ol>
+                            <li>First sub-item</li>
+                            <li>Second sub-item</li>
+                            <li>Third sub-item</li>
+                        </ol>
+                    </li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <p>Table of Monthly Savings</p>
+            <table>
+                <caption>Table of Monthly Savings</caption>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Salary</th>
+                        <th>Interest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>$60</td>
+                        <td>$40</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$40</td>
+                        <td>$40</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Grand Total</td>
+                        <td>$180</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="hyperlinks">
+            <h2>Hyperlinks</h2>
+            <p>This is a link to an external site: <a href="http://www.blackboard.com">Blackboard</a></p>
+            <p>This is a link to the <a href="#lists">Lists Section</a> of the web page.</p>
+            <p>This is a link same small rather than an http protocol:
+                <a href="mailto:someone@somewhere.com">email me</a></p>
+        </section>
+
+        <section id="images">
+            <h2>Images</h2>
+            <p>This thumbnail image is used as a hyperlink to a larger version</p>
+            <a href="images/mycat_small.jpg">
+                <figure>
+                    <img src="images/mycat_small.jpg" alt="A cat">
+                    <figcaption>A cat</figcaption>
+                </figure>
+            </a>
+        </section>
+    </article>
+
+    <footer>
+        <p class="menu"><a href="#">Home</a></p>
+        <p class="menu"><a href="#">About</a></p>
+        <p class="menu"><a href="#">Contact</a></p>
+        <p>© Steinhourne University of Technology</p>
+    </footer>
+</body>
+</html>
